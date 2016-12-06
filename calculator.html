@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+
+<style>
+    .wrapper {
+        width: 280px;
+        margin:auto;
+        text-align: center;
+        background-color: #990000;
+        height: 450px;
+        border-radius: 15px;
+    }
+    .title{
+    	margin-top:-15px;
+    }
+    .button{
+        border-radius:10px;
+        width:60px;
+        height:60px;
+        margin-top:10px;
+        color:white;
+        background-color:#333;
+        font-size: 25px;
+        
+    }
+    .wide{
+        background-color:#808080;
+		width:125px;
+    }
+    .screen{
+        text-align:right;
+		font-size:30px;
+        margin-top: 20px;
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #C7C7B0
+    }
+    .plus{
+        height: 130px;
+        float: right;
+        margin-right: 15px;
+        margin-left: -10px;
+    }
+    .row{
+        margin:auto;
+        display:block;
+    }
+</style>
+
+<body bgcolor="#808080">
+	<center>
+	</br>
+	<h1 class="title"><font color="#ccc" style="font-size:70px;">Calculator</font></h1>
+	<hr size=2px width="1000px" color="black">
+	</br>
+	<div class="wrapper">
+	
+		<div>
+			<input id="screen" name="0" value="0" disabled class="screen" />
+		</div>
+		
+			<button onclick="C()" id="ce" type="button" class="button wide">C</button> 
+			<button onclick="mod()" id ="%" type="button" class="button">%</button> 
+			<button onclick="div()" id ="/" type="button" class="button">/</button> 
+           
+			<button onclick="seven()" id ="7" type="button" class="button">7</button> 
+			<button onclick="eight()" id ="8" type="button" class="button">8</button> 
+			<button onclick="nine()" id ="9" type="button" class="button">9</button> 
+			<button onclick="mult()" id ="*" type="button" class="button">*</button> 
+		
+			<button onclick="four()" id ="4" type="button" class="button">4</button> 
+			<button onclick="five()" id ="5" type="button" class="button">5</button> 
+			<button onclick="six()" id ="6" type="button" class="button">6</button> 
+			<button onclick="sub()" id ="-" type="button" class="button">-</button> 
+			
+			<div class="row">
+			<button onclick="one()" id ="1" type="button" class="button">1</button> 
+			<button onclick="two()" id ="2" type="button" class="button">2</button> 
+			<button onclick="three()" id ="3" type="button" class="button">3</button>
+			<button onclick="add()" id ="+" type="button" class="button">+</button>
+			</div>
+      
+			<div class="row">
+			<button onclick="zero()" id ="0" type="button" class="button">0</button> 
+			<button onclick="deci()" id ="." type="button" class="button">.</button> 
+			<button onclick="equal()" id ="=" type="button" class="button wide">=</button> 
+			</div>
+			
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="calc.js"></script>
+	</center>
+</body>
+</html>
